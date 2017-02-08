@@ -7,7 +7,7 @@ import {Box} from './Box';
 class App extends Component {
 
   state = {
-    getValue: ''
+    getValue: 0
   }
 
   changeValueToInt = (event) => {
@@ -28,12 +28,12 @@ class App extends Component {
         <div className="w3-display-topleft w3-padding-large w3-xlarge">
           React by iPure
         </div>
-        
+
         <div className="w3-display-middle">
           <h1 className="w3-xxlarge w3-animate-top">Create Box</h1>
           <p className="w3-large w3-center">Select number</p>
           <select onChange={this.changeValueToInt} value={this.state.getValue}>
-            <option>-</option>   
+            <option>-</option>
             <option>1</option>
             <option>2</option>
             <option>3</option>
